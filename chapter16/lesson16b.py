@@ -24,6 +24,7 @@ from unittest.mock import patch
 
 class TestAgentIntegration(unittest.TestCase):
 
+    @patch('my_agent_module.generate_code')
     def test_generate_and_analyze_code(self, mock_generate):
         # Test the full workflow of generating and analyzing code
         
